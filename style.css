@@ -1,10 +1,9 @@
-.product-title {
-  font-weight: 400;
-  font-size: 70px;
-  line-height: 78px;
-  text-align: center;
-  vertical-align: middle;
-  color: #515076;
+
+body {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: 423px top;
+    background-attachment: fixed;
 }
 
 .page-wrapper {
@@ -12,10 +11,22 @@
     margin: 0 auto;
 }
 
+.product-title {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 78px;
+    text-align: center;
+    vertical-align: middle;
+    color: #515076;
+    margin-top: 200px;
+}
+
 .product-cards-wrapper {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .product-card {
@@ -51,4 +62,11 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
+}
+
+.price {
+    color: #515076;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
