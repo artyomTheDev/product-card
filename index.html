@@ -3,27 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Дока</title>
+    <title>Product-cards</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 </head>
 <body style="font-family: Montserrat,serif;">
-<div style="width: 340px; height: 573px;">
-    <img src="/images/mousse.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">
-    <p style="color: #A5A3B9">ДЛЯ НОРМАЛЬНОЙ КОЖИ</p>
-    <h2><b>Увлажняющий мусс</b></h2>
-    <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
-    <p>Состав:</p>
-    <ul>
-        <li>активные натуральные комплексы</li>
-        <li>витамины С, А, РР, В И Е</li>
-        <li>солнцезащитные компоненты</li>
-    </ul>
-    <div style="display: flex; justify-content: space-between">
-            <h2><b>Цена</b></h2>
-        <p style="font-size: 20px">2 750 ₽</p>
+<div class="background-img">
+    <div class="page-wrapper">
+        <h1 class="product-title">
+            Выбери свой продукт
+        </h1>
+        <div class="product-cards-wrapper">
+            <div class="product-card">
+                <img class="product-card-img" src="/images/mousse.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">
+                <p class="product-card-skin-type">Для нормальной кожи</p>
+                <h2 class="product-card-name">Увлажняющий мусс</h2>
+                <p class="product-card-function">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+                <div class="product-card-composition">
+                    <p>Состав:</p>
+                    <ul>
+                        <li>активные натуральные комплексы</li>
+                        <li>витамины С, А, РР, В И Е</li>
+                        <li>солнцезащитные компоненты</li>
+                    </ul>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <h2 class="price">Цена</h2>
+                    <p style="font-size: 20px">2 750 ₽</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-card-img" src="/images/mask.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">
+                <p class="product-card-skin-type">Для нормальной кожи</p>
+                <h2 class="product-card-name">Увлажняющая маска</h2>
+                <p class="product-card-function">Способствует удерживанию влаги в верхних слоях кожи.</p>
+                <div class="product-card-composition">
+                    <p>Состав:</p>
+                    <ul>
+                        <li>воски</li>
+                        <li>минералы</li>
+                        <li>масла</li>
+                    </ul>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <h2 class="price">Цена</h2>
+                    <p style="font-size: 20px">3 500 ₽</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-card-img" src="/images/gel.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">
+                <p class="product-card-skin-type">Для нормальной кожи</p>
+                <h2 class="product-card-name">Гель для умывания</h2>
+                <p class="product-card-function">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
+                <div class="product-card-composition">
+                    <p>Состав:</p>
+                    <ul>
+                        <li>минералы</li>
+                        <li>витамины С, А, РР, В И Е</li>
+                        <li>солнцезащитные компоненты</li>
+                    </ul>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <h2 class="price">Цена</h2>
+                    <p style="font-size: 20px">1 650 ₽</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-card-img" src="/images/present-kit_1.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">
+                <p class="product-card-skin-type">Для нормальной кожи</p>
+                <h2 class="product-card-name">Подарочный набор №1</h2>
+                <p class="product-card-function">Набор, состоящий из увлажняющего крема и маски.</p>
+                <div class="product-card-composition">
+                    <p>Состав:</p>
+                    <ul>
+                        <li>воски</li>
+                        <li>минералы</li>
+                        <li>масла</li>
+                    </ul>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <h2 class="price">Цена</h2>
+                    <p style="font-size: 20px">4 750 ₽</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-card-img" src="/images/present-kit_2.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">
+                <p class="product-card-skin-type">Для нормальной кожи</p>
+                <h2 class="product-card-name">Подарочный набор №5</h2>
+                <p class="product-card-function">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+                <div class="product-card-composition">
+                    <p>Состав:</p>
+                    <ul>
+                        <li>воски</li>
+                        <li>минералы</li>
+                        <li>масла</li>
+                    </ul>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <h2 class="price">Цена</h2>
+                    <p style="font-size: 20px">7 520 ₽</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
