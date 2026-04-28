@@ -28,3 +28,9 @@ function openGoogle() {
         window.open('https://google.com');
     }
 }
+
+const text = document.querySelector('.product-title')
+
+text.addEventListener("mouseover", () => {
+    console.log(text.innerText);
+});
