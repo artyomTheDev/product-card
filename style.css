@@ -70,3 +70,13 @@ body {
     font-size: 20px;
     line-height: 24px;
 }
+
+.blue-color {
+    color: blue;
+    background: white;
+}
+
+.purple-color {
+    color: purple;
+    background: lightgray;
+}
