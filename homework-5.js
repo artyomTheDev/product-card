@@ -14,9 +14,11 @@ function speedTest(currentSpeed) {
     }
 }
 
+
+const product = 'Торт';
+const price = 350;
+
 function productPurchase(currentBalance) {
-    const product = 'Торт';
-    const price = 350;
 if (currentBalance > price) {
     console.log(`${ product } приобретён. Спасибо за покупку!`)
 } else {
