@@ -26,3 +26,19 @@ if (currentBalance > price) {
     console.log(`Вам не хватает ${balanceDifference}$, пополните баланс`)
 }
 }
+
+const clothesForWinter = ['куртка ', ' свитер '];
+const clothesForSummer = ['футболка ', ' шорты '];
+const clothesForDesert = ['верблюд', ' бурдюк', ' панамка']
+
+function weatherAdvisor(currentTemperature) {
+    if (currentTemperature <= 0) {
+        console.log(`на улице холодно, одевайся теплее! здесь понадобятся ${clothesForWinter}`)
+    } else if (currentTemperature > 0 && currentTemperature < 20){
+        console.log(`на улице нормально, одейвайся на свой вкус. лучше всего подойдут ${clothesForSummer}`)
+    } else if (currentTemperature > 20) {
+        console.log(`на улице совсем жарко, лучше не выходить! или бери с собой охладительный напиток. тебе может понадобиться ${clothesForDesert}`)
+    }
+}
+
+weatherAdvisor(55);
