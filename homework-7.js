@@ -65,3 +65,15 @@ function isInvalidAdding(massive) {
 
 //задание 7.11 вывод массива почт с помощью reduce
 
+const onlyEmailMassive = comments.reduce( (currentMassive, comment) => {
+    currentMassive.push(comment.email)
+    return currentMassive
+    }, [])
+
+const onlyEmailMassiveWithMap = comments.map( object => object.email )
+
+//задание 7.12 вывод единой строки с почтами
+
+const stringWithEmails = onlyEmailMassiveWithMap.join()
+
+
