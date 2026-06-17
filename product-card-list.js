@@ -10,7 +10,7 @@ export const allProductCards = [
             'витамины С, А, РР, В И Е',
             'солнцезащитные компоненты'
         ],
-        price: 2750,
+        price: '2750 ₽',
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const allProductCards = [
             'минералы',
             'масла'
         ],
-        price: 3500,
+        price: '3500 ₽',
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export const allProductCards = [
             'витамины С, А, РР, В И Е',
             'солнцезащитные компоненты'
         ],
-        price: 1650,
+        price: '1650 ₽',
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ export const allProductCards = [
             'минералы',
             'масла'
         ],
-        price: 4750,
+        price: '4750 ₽',
     },
     {
         id: 5,
@@ -62,9 +62,16 @@ export const allProductCards = [
             'минералы',
             'масла'
         ],
-        price: 7520,
+        price: '7520 ₽',
     },
 ]
 
 const productCardsTemplate = document.getElementById('product-cards');
 const productCardsList = document.getElementById('product-cards-list');
+
+allProductCards.forEach(card => {
+    const productCardClone = productCardsTemplate.content.cloneNode(true);
+    productCardClone.querySelector("#skinType").textContent = card.skinType
+    productCardsList.append(productCardClone)
+})
+

@@ -22,11 +22,27 @@
         <button id="change-btn-color">Перекрасить эту кнопку</button>
         <div class="product-cards-wrapper">
             <ul id="product-cards-list">
-            </ul>
-
                 <template id="product-cards">
-
+                    <div class="product-card">
+                        <img class="product-card-img" src="" alt="Тут должна быть фотография мусса" width="290px" height="245px">
+                        <p class="product-card-skin-type" id="skinType"></p>
+                        <h2 class="product-card-name" id="title"></h2>
+                        <p class="product-card-function" id="description"></p>
+                        <div class="product-card-composition" id="composition">
+                            <p>Состав:</p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; justify-content: space-between">
+                            <h2 class="price" id="price"></h2>
+                            <p style="font-size: 20px"></p>
+                        </div>
+                    </div>
                 </template>
+            </ul>
 
 <!--            <div class="product-card">-->
 <!--                <img class="product-card-img" src="/images/mousse.png" alt="Тут должна быть фотография мусса" width="290px" height="245px">-->
