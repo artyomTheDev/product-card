@@ -1,7 +1,7 @@
 export const allProductCards = [
     {
         id: 1,
-        image:'./images/mousse.png',
+        image:"./images/mousse.png",
         skinType:'Для нормальной кожи',
         title:'Увлажняющий мусс',
         description:'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
@@ -71,7 +71,13 @@ const productCardsList = document.getElementById('product-cards-list');
 
 allProductCards.forEach(card => {
     const productCardClone = productCardsTemplate.content.cloneNode(true);
+    console.log(productCardClone.querySelector("#product-card-img"))
+    productCardClone.querySelector(".product-card-img").src = card.image
     productCardClone.querySelector("#skinType").textContent = card.skinType
+    productCardClone.querySelector("#title").textContent = card.title
+    productCardClone.querySelector("#description").textContent = card.description
+    productCardClone.querySelector("#composition").textContent = card.composition
+    productCardClone.querySelector("#price").textContent = card.price
     productCardsList.append(productCardClone)
 })
 
