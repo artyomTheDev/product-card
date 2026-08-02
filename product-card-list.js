@@ -66,18 +66,4 @@ export const allProductCards = [
     },
 ]
 
-const productCardsTemplate = document.getElementById('product-cards');
-const productCardsList = document.getElementById('product-cards-list');
-
-allProductCards.forEach(card => {
-    const productCardClone = productCardsTemplate.content.cloneNode(true);
-    console.log(productCardClone.querySelector("#product-card-img"))
-    productCardClone.querySelector(".product-card-img").src = card.image
-    productCardClone.querySelector("#skinType").textContent = card.skinType
-    productCardClone.querySelector("#title").textContent = card.title
-    productCardClone.querySelector("#description").textContent = card.description
-    productCardClone.querySelector("#composition").textContent = card.composition
-    productCardClone.querySelector("#price").textContent = card.price
-    productCardsList.append(productCardClone)
-})
 
